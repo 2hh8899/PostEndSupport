@@ -1,0 +1,173 @@
+[{
+	"type": "ENTER",
+	"index": "entities"
+}, {
+	"type": "ADD_ARRAY_ELEMENT",
+	"content": {
+		"type": "EventTrigger",
+		"x": 10,
+		"y": 10,
+		"level": 1,
+		"settings": {
+			"name": "restoreGameStatus",
+			"eventType": "PARALLEL",
+			"startCondition": "plot.line >= 52000",
+			"endCondition": "false",
+			"triggerType": "ONCE",
+			"mapId": 25890,
+			"event": [{
+				"area": "autumn-area",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "autumn-fall",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "beach",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "bergen-trails",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "bergen",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "cargo-ship",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "evo-village",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "final-dng",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "forest",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "heat-area",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "heat-village",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "jungle-city",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "jungle",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "rhombus-sqr",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "rookie-harbor",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "shock-dng",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"area": "arid",
+				"state": true,
+				"type": "SET_LANDMARK_ACTIVE_STATE"
+			}, {
+				"member": "Shizuka",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Sergey",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Schneider",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Hlin",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Grumpy",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Buggy",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Apollo",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Joern",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"member": "Luke",
+				"online": true,
+				"type": "SET_CONTACT_ONLINE"
+			}, {
+				"value": true,
+				"type": "SET_ALL_PLAYER_CORE"
+			}, {
+				"task": {
+					"en_US": "Thank you for playing!",
+					"de_DE": "Danke fürs Spielen!",
+					"zh_TW": "感謝您的遊玩！",
+					"zh_CN": "感谢您的游玩！",
+					"ko_KR": "플레이해 주셔서 감사합니다!",
+					"ja_JP": "プレイしていただきありがとうございます！"
+				},
+				"type": "SET_PERMA_TASK"
+			}, {
+				"mode": "SLOWEST",
+				"delayed": false,
+				"type": "RESUME_DEFAULT_BGM"
+			}, {
+				"type": "TELEPORT",
+				"map": "evo-village.center",
+				"marker": "doorLea"
+			}, {
+				"type": "WAIT",
+				"time": 1
+			}]
+		}
+	}
+}, {
+	"type": "ADD_ARRAY_ELEMENT",
+	"content": {
+		"type": "EventTrigger",
+		"x": 20,
+		"y": 20,
+		"level": 1,
+		"settings": {
+			"name": "makeSomethingSolid",
+			"eventType": "PARALLEL",
+			"startCondition": "plot.line >= 52000",
+			"endCondition": "false",
+			"triggerType": "ONCE_PER_ENTRY",
+			"mapId": 25891,
+			"event": [{
+				"type": "PE_S_MAKE_SOLID"
+			}, {
+				"type": "WAIT",
+				"time": 1
+			}]
+		}
+	}
+}, {
+	"type": "EXIT"
+}]

@@ -1,0 +1,8 @@
+{
+    "name": "post-end-support",
+    "displayName": "\\c[2]Post-End Support\\c[0]",
+    "description": "The end cutscene doesn't kick out to the title anymore.",
+    "prestart": "prestart.js",
+    "version": "0.1.0",
+    "module": true
+}
